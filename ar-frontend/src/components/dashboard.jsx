@@ -20,11 +20,12 @@ function dashboard() {
   };
 
   return (
-    <div style={{ padding: "40px", color: "white" }}>
-      <h1>AR Infrastructure Dashboard</h1>
+    <div style={{ padding: "40px",color:"white"}}>
+        <h1 style={{ marginBottom: "40px" }}>
+      AR Infrastructure Dashboard</h1>
 
       {data ? (
-        <div style={{ display: "flex", gap: "20px", marginTop: "30px" }}>
+        <div style={{ display: "flex", gap: "30px", marginTop: "30px",flexWrap: "wrap", }}>
           <MetricsCard
             title="CPU Usage"
             value={`${data.cpu}%`}
