@@ -4,7 +4,7 @@
     "description": "Backend for AR Infrastructure Visualization Tool",
     "main": "src/server.js",
     "scripts": {
-        "start": "node src/server.js",
+        "start": "node src/server.js",  
         "dev": "node src/server.js"
     },
     "keywords": ["AR", "infrastructure", "visualization", "realtime"],
