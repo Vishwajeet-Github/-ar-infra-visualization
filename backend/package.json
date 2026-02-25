@@ -5,14 +5,29 @@
     "main": "src/server.js",
     "scripts": {
         "start": "node src/server.js",
-        "dev": "node src/server.js"
+        "dev": "node src/server.js",
+        "lint": "eslint ."
     },
-    "keywords": ["AR", "infrastructure", "visualization", "realtime"],
+    "keywords": [
+        "AR",
+        "infrastructure",
+        "visualization",
+        "realtime"
+    ],
     "author": "",
     "license": "ISC",
     "dependencies": {
         "cors": "^2.8.6",
         "express": "^4.19.2",
         "socket.io": "^4.8.3"
+    },
+    "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "eslint": "^10.0.2",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.5",
+        "eslint-plugin-react": "^7.22.0",
+        "globals": "^17.3.0",
+        "prettier": "^3.8.1"
     }
 }
