@@ -6,8 +6,14 @@
     "scripts": {
         "start": "node src/server.js",
         "dev": "node src/server.js"
+
     },
-    "keywords": ["AR", "infrastructure", "visualization", "realtime"],
+    "keywords": [
+        "AR",
+        "infrastructure",
+        "visualization",
+        "realtime"
+    ],
     "author": "",
     "license": "ISC",
     "dependencies": {
