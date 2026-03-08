@@ -11,6 +11,8 @@
         "lint:fix": "eslint . --fix",
         "format": "prettier --write .",
         "prepare": "husky"
+        "dev": "node src/server.js"
+
     },
     "keywords": [
         "AR",
