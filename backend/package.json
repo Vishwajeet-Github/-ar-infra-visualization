@@ -1,6 +1,7 @@
 {
   "name": "ar-infra-backend",
   "version": "1.0.0",
+  "type": "module",
   "description": "Backend for AR Infrastructure Visualization Tool",
   "main": "src/server.js",
   "scripts": {
@@ -9,7 +10,8 @@
     "lint": "eslint . --ext .js --max-warnings=0",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": "jest"
   },
   "keywords": [
     "AR",
@@ -22,7 +24,8 @@
   "dependencies": {
     "cors": "^2.8.6",
     "express": "^4.19.2",
-    "socket.io": "^4.8.3"
+    "socket.io": "^4.8.3",
+    "winston": "^3.19.0"
   },
   "devDependencies": {
     "eslint": "^8.57.1",
@@ -30,14 +33,22 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-prettier": "^5.5.5",
+    "faker": "^6.6.6",
     "husky": "^9.1.7",
+    "jest": "^30.3.0",
     "lint-staged": "^16.2.7",
-    "prettier": "^3.8.1"
+    "prettier": "^3.8.1",
+    "supertest": "^7.2.2"
   },
   "lint-staged": {
     "*.js": [
       "eslint --fix",
       "prettier --write"
+      
     ]
-  }
+  },
+  "jest": {
+  "testEnvironment": "node",
+  "setupFilesAfterEnv": ["<rootDir>/tests/setup.js"]
+}
 }
